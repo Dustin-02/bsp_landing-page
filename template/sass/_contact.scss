@@ -5,7 +5,7 @@
   label {
     font-size: 16px;
     color: var(--secondary_color);
-    font-family: $Poppins-font;
+    font-family: var(--Poppins-font);
     font-weight: 500;
     display: block;
     margin-bottom: 12px;
@@ -15,7 +15,7 @@
     height: 55px;
     color: #9199a1;
     font-size: 14px;
-    font-family: $Roboto-font;
+    font-family: var(--Roboto-font);
     font-weight: 400;
     border: 1px solid var(--black_50);
     padding-right: 20px;
@@ -23,7 +23,7 @@
     &::placeholder {
       color: #9199a1;
       font-size: 14px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
     }
     &:focus {
@@ -38,7 +38,7 @@
   }
   .policy-text {
     font-size: 14px;
-    font-family: $Roboto-font;
+    font-family: var(--Roboto-font);
     font-weight: 400;
     color: var(--p_color);
     line-height: 22px;
@@ -64,7 +64,7 @@
     }
     p {
       font-size: 16px;
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-weight: 500;
       color: var(--secondary_color);
       margin-bottom: 8px;
@@ -72,7 +72,7 @@
     }
     span {
       font-size: 14px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       color: var(--p_color);
       line-height: 22px;
@@ -94,7 +94,7 @@
     color: #fff;
   }
   p {
-    font-family: $Roboto-font;
+    font-family: var(--Roboto-font);
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;

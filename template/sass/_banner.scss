@@ -2,7 +2,7 @@
 /*  banner CSS
 /*----------------------------------------*/
 .banner-area {
-  background-color: $theme-color;
+  background-color: var(--theme-color);
   background-image: url(../img/banner/bg-img.png);
   background-position: center;
   background-size: cover;
@@ -152,7 +152,7 @@
   .banner-content {
     h1 {
       font-size: 60px;
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-weight: 700;
       color: #fff;
       text-transform: capitalize;
@@ -253,13 +253,13 @@
     }
     h1 {
       color: var(--secondary_color);
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-weight: 700;
       line-height: 56px;
     }
     p {
       font-size: 16px;
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-weight: 400;
       color: var(--p_color);
     }
@@ -365,7 +365,7 @@
     h1 {
       font-size: 50px;
       color: #fff;
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-weight: 700;
       line-height: 56px;
     }
@@ -382,6 +382,7 @@
     z-index: 1;
   }
 }
+
 .banner-area-4 {
   background-color: #10121c;
   overflow: hidden;
@@ -438,13 +439,13 @@
   .banner-content {
     h1 {
       font-size: 60px;
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-weight: 700;
       color: #fff;
     }
     p {
       font-size: 16px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       color: #fff;
       line-height: 24px;
@@ -514,7 +515,7 @@
     h1 {
       line-height: 66px;
       font-size: 60px;
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-weight: 600;
       color: #fff;
       margin-bottom: 28px;
@@ -526,14 +527,14 @@
     }
     p {
       font-size: 18px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       color: #fff;
       line-height: 30px;
     }
     .under_link {
       font-size: 18px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 500;
       color: #fff;
       line-height: 60px;
@@ -662,14 +663,14 @@
     h1 {
       line-height: 88px;
       font-size: 70px;
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-weight: 600;
       color: var(--black_900);
       margin-bottom: 35px;
     }
     p {
       font-size: 18px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       color: var(--black_600);
       line-height: 30px;
@@ -764,7 +765,7 @@
       margin-right: 14px;
     }
     p {
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-size: 18px;
       font-weight: 400;
       line-height: 28px;
@@ -828,7 +829,7 @@
     z-index: 1;
     h1 {
       color: #fff;
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-weight: 700;
       margin-bottom: 10px;
       text-transform: capitalize;
@@ -836,7 +837,7 @@
 
     h2 {
       color: #fff;
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-weight: 700;
       margin-bottom: 10px;
       text-transform: capitalize;
@@ -861,7 +862,7 @@
       li {
         font-size: 16px;
         color: #c8ccd0;
-        font-family: $Roboto-font;
+        font-family: var(--Roboto-font);
         font-weight: 400;
         position: relative;
         text-transform: capitalize;
@@ -927,7 +928,7 @@
         height: 60px;
         padding: 19px 25px;
         color: #c8ccd0;
-        font-family: $Roboto-font;
+        font-family: var(--Roboto-font);
         font-weight: 400;
         font-size: 16px;
         border-radius: 5px;
@@ -935,7 +936,7 @@
         border: 1px solid #d8dce0;
         &::placeholder {
           color: #c8ccd0;
-          font-family: $Roboto-font;
+          font-family: var(--Roboto-font);
           font-weight: 400;
           font-size: 16px;
         }
@@ -957,14 +958,14 @@
     .popular-tags {
       span {
         font-size: 14px;
-        font-family: $Roboto-font;
+        font-family: var(--Roboto-font);
         font-weight: 400;
         color: #d8dce0;
         margin-right: 15px;
       }
       a {
         font-size: 14px;
-        font-family: $Roboto-font;
+        font-family: var(--Roboto-font);
         font-weight: 400;
         color: #fff;
         padding: 4px 22px;
@@ -987,7 +988,7 @@
         display: flex;
         align-items: center;
         font-size: 14px;
-        font-family: $Roboto-font;
+        font-family: var(--Roboto-font);
         font-weight: 400;
         color: #c8ccd0;
         span {
@@ -1031,7 +1032,7 @@
     font-size: 14px;
     font-weight: 600;
     color: #7B7F9C;
-    font-family: $Roboto-font;
+    font-family: var(--Roboto-font);
     padding: 11px 16px 10px 16px;
     display: inline-block;
     margin-bottom: 35px;
@@ -1039,7 +1040,7 @@
   h1{
     color: var(--secondary_color);
     text-align: center;
-    font-family: $Poppins-font;
+    font-family: var(--Poppins-font);
     font-size: 74px;
     font-style: normal;
     font-weight: 600;
@@ -1056,7 +1057,7 @@
     font-size: 24px;
     line-height: 42px;
     color: #878BA9;
-    font-family: $Poppins-font;
+    font-family: var(--Poppins-font);
     max-width: 760px;
     margin-left: auto;
     margin-right:  auto;
@@ -1065,7 +1066,7 @@
   .theme-btn{
     border-radius: 8px;
     margin: 0px 12px;
-    font-family: $Poppins-font;
+    font-family: var(--Poppins-font);
     font-size: 20px;
     font-weight: 500;
     & + .theme-btn{
@@ -1149,7 +1150,7 @@
       font-weight: 400;
       color: #B6B8BB;
       line-height: 26px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       margin-right: 15px;
     }
   }
@@ -1172,7 +1173,7 @@
 .active-user{
   color: #fff;
   font-size: 14px;
-  font-family: $Poppins-font;
+  font-family: var(--Poppins-font);
 }
 .user-img-inner{
   display: flex;

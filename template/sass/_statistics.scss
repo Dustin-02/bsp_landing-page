@@ -21,7 +21,7 @@
   }
   p {
     font-size: 18px;
-    font-family: $Roboto-font;
+    font-family: var(--Roboto-font);
     font-weight: 400;
     color: var(--secondary_color);
     margin: 20px 0 6px 0;
@@ -29,8 +29,8 @@
   }
   .counter {
     font-size: 36px;
-    color: $theme-color;
-    font-family: $Poppins-font;
+    color: var(--theme-color);
+    font-family: var(--Poppins-font);
     font-weight: 700;
   }
 }
@@ -106,19 +106,19 @@
     h1 {
       font-size: 70px;
       color: #fff;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 700;
     }
     h2 {
       font-size: 40px;
       color: #fff;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 700;
     }
     p {
       font-size: 16px;
       color: #fff;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       margin-top: 15px;
     }

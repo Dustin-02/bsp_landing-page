@@ -61,7 +61,7 @@
         &.slick-active {
           opacity: 1;
           .testimonial-widget {
-            box-shadow: 0 10px 30px 0 rgba(#334d72, 12%);
+            box-shadow: 0 10px 30px 0 rgba(var(--theme-color), 0.12);
           }
         }
       }
@@ -90,14 +90,14 @@
     width: 35px;
     border-radius: 3px;
     transition: all 0.3s ease-out;
-    box-shadow: $theme-dropshadow;
+    box-shadow: var(--theme-dropshadow);
     font-size: 18px;
     color: #a0a4a8;
     z-index: 1;
     background-color: var(--bs-white);
     &:hover {
-      box-shadow: 0 5px 15px 0 rgba(#334d72, 10%);
-      color: $theme-title-color;
+      box-shadow: 0 5px 15px 0 rgba(var(--theme-color), 0.1);
+      color: var(--theme-title-color);
     }
 
     &.slick-next {
@@ -148,9 +148,9 @@
     padding: 20px;
     .watch-button {
       font-size: 18px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
-      color: $theme-title-color;
+      color: var(--theme-title-color);
       margin-bottom: 15px;
       a {
         display: inline-block;
@@ -170,15 +170,15 @@
 
     h2 {
       font-size: 36px;
-      color: $theme-title-color;
-      font-family: $Poppins-font;
+      color: var(--theme-title-color);
+      font-family: var(--Poppins-font);
       font-weight: 700;
       margin: 0;
     }
     p {
       font-size: 18px;
       color: var(--p_color);
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       font-style: italic;
       margin: 30px 0 28px 0;
@@ -187,8 +187,8 @@
     .author-info {
       h4 {
         font-size: 24px;
-        color: $theme-title-color;
-        font-family: $Poppins-font;
+        color: var(--theme-title-color);
+        font-family: var(--Poppins-font);
         font-weight: 600;
         margin-bottom: 0;
         line-height: 39px;
@@ -196,7 +196,7 @@
       span {
         font-size: 16px;
         color: var(--p_color);
-        font-family: $Roboto-font;
+        font-family: var(--Roboto-font);
         font-weight: 400;
         line-height: 26px;
       }
@@ -230,14 +230,14 @@
     );
 
     p {
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 500;
       font-size: 16px;
       color: #fff;
       line-height: 24px;
     }
     span {
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       font-size: 12px;
       color: #fff;
@@ -278,7 +278,7 @@
     }
 
     .caption {
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 500;
       font-style: italic;
       color: #fff;
@@ -319,8 +319,8 @@
     left: 0px;
     h6 {
       font-size: 18px;
-      color: $theme-title-color;
-      font-family: $Roboto-font;
+      color: var(--theme-title-color);
+      font-family: var(--Roboto-font);
       font-weight: 500;
       line-height: 24px;
       margin-bottom: 0;
@@ -328,7 +328,7 @@
     span {
       font-size: 14px;
       color: var(--p_color);
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       line-height: 22px;
     }
@@ -384,7 +384,7 @@
       }
       .quote {
         font-size: 17px;
-        font-family: $Inter-font;
+        font-family: var(--Inter-font);
         font-weight: 400;
         font-style: italic;
         color: var(--black_600);
@@ -411,7 +411,7 @@
         align-items: center;
         p {
           font-size: 17px;
-          font-family: $Roboto-font;
+          font-family: var(--Roboto-font);
           font-weight: 500;
           color: var(--secondary_color);
           text-transform: capitalize;
@@ -421,7 +421,7 @@
           display: inline-block;
           font-size: 12px;
           color: var(--p_color);
-          font-family: $Inter-font;
+          font-family: var(--Inter-font);
           font-weight: 400;
           text-transform: capitalize;
           line-height: 19px;
@@ -519,10 +519,6 @@
 
   .single-client {
     padding: 30px;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
     margin: 55px 10px;
     margin-bottom: 70px;
@@ -537,7 +533,7 @@
     }
     .quote {
       font-size: 18px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       line-height: 30px;
       color: var(--black_750);
@@ -557,7 +553,7 @@
       gap: 12px;
       p {
         font-size: 16px;
-        font-family: $Poppins-font;
+        font-family: var(--Poppins-font);
         font-weight: 500;
         color: var(--black_750);
         text-transform: capitalize;
@@ -567,7 +563,7 @@
         display: inline-block;
         font-size: 14px;
         color: #6c6f70;
-        font-family: $Roboto-font;
+        font-family: var(--Roboto-font);
         font-weight: 400;
         text-transform: capitalize;
         line-height: 19px;

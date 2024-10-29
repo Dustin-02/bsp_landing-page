@@ -35,8 +35,8 @@
   }
   .faq-header {
     h4 {
-      color: $theme-title-color;
-      font-family: $Poppins-font;
+      color: var(--theme-title-color);
+      font-family: var(--Poppins-font);
       font-weight: 600;
       font-size: 24px;
       line-height: 40px;
@@ -74,7 +74,7 @@
     p {
       font-size: 16px;
       color: var(--p_color);
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       margin-top: 10px;
       line-height: 26px;
@@ -86,7 +86,7 @@
   border-radius: 10px;
   padding: 40px 30px;
   background-color: var(--bs-white);
-  box-shadow: $theme-dropshadow;
+  box-shadow: var(--theme-dropshadow);
   .single-widget-one {
     padding: 19px 0;
     transition: all 0.3s ease-out;
@@ -103,7 +103,7 @@
   .faq-header {
     h6 {
       color: var(--brand_color);
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-weight: 600;
       font-size: 18px;
       position: relative;
@@ -125,8 +125,8 @@
       }
 
       &.collapsed {
-        color: $theme-title-color;
-        font-family: $Poppins-font;
+        color: var(--theme-title-color);
+        font-family: var(--Poppins-font);
         font-weight: 500;
         i {
           color: #52575c;
@@ -143,7 +143,7 @@
     p {
       font-size: 16px;
       color: var(--p_color);
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       margin-top: 32px;
     }
@@ -202,7 +202,7 @@
       background-color: rgba(#0d1b2b, 60%);
       font-size: 14px;
       color: #fff;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       padding: 9px 26px;
 
@@ -228,7 +228,7 @@
         }
       }
       span {
-        font-family: $Roboto-font;
+        font-family: var(--Roboto-font);
         font-weight: 500;
       }
     }
@@ -281,7 +281,7 @@
   }
   .faq-widget {
     .more-contact {
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-size: 18px;
       font-weight: 500;
       line-height: 24px;
@@ -441,7 +441,7 @@
   }
   p {
     font-size: 18px;
-    font-family: $Roboto-font;
+    font-family: var(--Roboto-font);
     color: var(--p_color);
     line-height: 28px;
   }

@@ -71,7 +71,7 @@
       font-size: 30px;
       font-weight: 400;
       margin-bottom: 0;
-      color: $theme-title-color;
+      color: var(--theme-title-color);
       margin-top: 10px;
       span {
         font-weight: 700;
@@ -81,14 +81,14 @@
 }
 
 #preloader .head {
-  color: $theme-title-color;
+  color: var(--theme-title-color);
   display: block;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 5.2px;
   text-transform: uppercase;
   text-align: center;
-  font-family: $Roboto-font;
+  font-family: var(--Roboto-font);
   margin: 5% 0 1% 0;
   padding: 0;
 }

@@ -33,7 +33,7 @@
   .section-title {
     a {
       font-size: 18px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       color: var(--brand_color);
       i {
@@ -72,13 +72,13 @@
       margin: 20px 0;
       a {
         color: var(--secondary_color);
-        font-family: $Poppins-font;
+        font-family: var(--Poppins-font);
         font-weight: 600;
       }
     }
     P {
       font-size: 16px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       color: var(--p_color);
       margin-bottom: 20px;
@@ -86,10 +86,10 @@
     }
     .read-more {
       display: inline-block;
-      color: $theme-color;
+      color: var(--theme-color);
       text-transform: uppercase;
       font-size: 16px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 500;
       margin-bottom: 20px;
       i {
@@ -103,7 +103,7 @@
     h6 {
       a {
         color: var(--secondary_color);
-        font-family: $Poppins-font;
+        font-family: var(--Poppins-font);
         font-weight: 600;
         font-size: 18px;
         line-height: 24px;
@@ -122,7 +122,7 @@
       }
       span {
         margin-left: 7px;
-        font-family: $Roboto-font;
+        font-family: var(--Roboto-font);
         font-weight: 400;
         color: var(--p_color);
         font-size: 14px;
@@ -134,7 +134,7 @@
   border-radius: 10px;
   overflow: hidden;
   background-color: var(--bs-white);
-  box-shadow: $theme-dropshadow;
+  box-shadow: var(--theme-dropshadow);
   transition: all 0.3s ease-out;
   &:hover {
     box-shadow: 0 20px 45px 0 rgba(#334d72, 15%);
@@ -154,7 +154,7 @@
       left: 35px;
       font-size: 14px;
       color: #fff;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 500;
       line-height: 16.41px;
       transform: translateY(50%);
@@ -183,14 +183,14 @@
     padding: 37px 35px 41px 35px;
     h4 {
       font-size: 24px;
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-weight: 600;
       color: var(--secondary_color);
       margin-bottom: 15px;
     }
     h5 {
       font-size: 20px;
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-weight: 700;
       line-height: 26px;
       color: var(--secondary_color);
@@ -198,7 +198,7 @@
     }
     p {
       font-size: 16px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       color: var(--p_color);
       line-height: 26px;
@@ -214,7 +214,7 @@
         span {
           font-size: 14px;
           color: var(--p_color);
-          font-family: $Roboto-font;
+          font-family: var(--Roboto-font);
           font-weight: 400;
           margin-left: 8px;
         }
@@ -241,7 +241,7 @@
       right: 16px;
       font-size: 16px;
       color: #000;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       text-transform: uppercase;
 
@@ -261,7 +261,7 @@
   .blog-content {
     h4 {
       font-size: 22px;
-      font-family: $Poppins-font;
+      font-family: var(--Poppins-font);
       font-weight: 600;
       color: var(--secondary_color);
       margin-bottom: 0;
@@ -281,7 +281,7 @@
         span {
           font-size: 16px;
           color: #6a737c;
-          font-family: $Roboto-font;
+          font-family: var(--Roboto-font);
           font-weight: 400;
           margin-left: 8px;
         }
@@ -297,18 +297,18 @@
   .widget-title {
     font-size: 24px;
     color: var(--secondary_color);
-    font-family: $Poppins-font;
+    font-family: var(--Poppins-font);
     font-weight: 600;
   }
 
   .widget-subscribe {
     padding: 30px 35px 40px 35px;
-    box-shadow: $theme-dropshadow;
+    box-shadow: var(--theme-dropshadow);
     background-color: var(--bs-white);
     border-radius: 8px;
     p {
       font-size: 16px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       color: var(--p_color);
       line-height: 27px;
@@ -317,7 +317,7 @@
     input {
       padding: 11px 20px;
       font-size: 16px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       color: #848d95;
       border: 1px solid var(--black_50);
@@ -327,7 +327,7 @@
       }
       &::placeholder {
         font-size: 16px;
-        font-family: $Roboto-font;
+        font-family: var(--Roboto-font);
         font-weight: 400;
         color: #848d95;
       }
@@ -338,7 +338,7 @@
     a {
       display: block;
       border-radius: 5px;
-      box-shadow: $theme-dropshadow;
+      box-shadow: var(--theme-dropshadow);
       transition: all 0.3s ease-out;
       background-color: var(--bs-white);
       padding: 20.5px;
@@ -353,13 +353,13 @@
       h6 {
         font-size: 18px;
         color: var(--secondary_color);
-        font-family: $Poppins-font;
+        font-family: var(--Poppins-font);
         font-weight: 600;
         margin-bottom: 0;
       }
 
       span {
-        font-family: $Roboto-font;
+        font-family: var(--Roboto-font);
         font-weight: 400;
         font-size: 12px;
         color: var(--p_color);
@@ -372,7 +372,7 @@
         a {
           display: inline-block;
           font-size: 16px;
-          font-family: $Roboto-font;
+          font-family: var(--Roboto-font);
           font-weight: 400;
           color: var(--secondary_color);
           position: relative;
@@ -421,7 +421,7 @@
           margin-left: 19px;
           h6 {
             font-size: 16px;
-            font-family: $Poppins-font;
+            font-family: var(--Poppins-font);
             font-weight: 500;
             color: var(--secondary_color);
             line-height: 20px;
@@ -436,7 +436,7 @@
             display: flex;
             align-items: center;
             font-size: 14px;
-            font-family: $Roboto-font;
+            font-family: var(--Roboto-font);
             font-weight: 400;
             color: var(--p_color);
             span {
@@ -454,7 +454,7 @@
         height: 30px;
         padding: 7px 20px;
         font-size: 14px;
-        font-family: $Roboto-font;
+        font-family: var(--Roboto-font);
         font-weight: 400;
         color: var(--p_color);
         border-radius: 3px;
@@ -481,7 +481,7 @@
         height: 32px;
         width: 32px;
         border: 1px solid rgba(#0050b2, 30%);
-        font-family: $Roboto-font;
+        font-family: var(--Roboto-font);
         font-weight: 400;
         font-size: 14px;
         color: var(--brand_color);
@@ -517,7 +517,7 @@
   left: 0;
   p {
     font-size: 16px;
-    font-family: $Roboto-font;
+    font-family: var(--Roboto-font);
     font-weight: 500;
     color: var(--secondary_color);
   }
@@ -552,7 +552,7 @@
 .post-details-widget {
   .post-text {
     font-size: 16px;
-    font-family: $Roboto-font;
+    font-family: var(--Roboto-font);
     font-weight: 400;
     color: var(--p_color);
     margin-bottom: 23px;
@@ -567,7 +567,7 @@
     li {
       position: relative;
       font-size: 16px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       color: var(--p_color);
       padding-left: 24px;
@@ -591,7 +591,7 @@
 
   h2 {
     font-size: 36px;
-    font-family: $Poppins-font;
+    font-family: var(--Poppins-font);
     font-weight: 700;
     color: var(--secondary_color);
     line-height: 42px;
@@ -602,7 +602,7 @@
     align-items: center;
     h6 {
       font-size: 17px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 500;
       color: var(--secondary_color);
       margin-bottom: 0;
@@ -612,7 +612,7 @@
       height: 30px;
       padding: 7px 20px;
       font-size: 14px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       color: var(--p_color);
       border-radius: 3px;
@@ -633,13 +633,13 @@
   padding: 36px 50px;
   background-color: var(--bs-white);
   border-radius: 8px;
-  box-shadow: $theme-dropshadow;
+  box-shadow: var(--theme-dropshadow);
   .author-img {
     margin-right: 20px;
   }
   h6 {
     font-size: 19px;
-    font-family: $Roboto-font;
+    font-family: var(--Roboto-font);
     font-weight: 500;
     color: var(--secondary_color);
     line-height: 28px;
@@ -647,7 +647,7 @@
   }
   p {
     font-size: 17px;
-    font-family: $Roboto-font;
+    font-family: var(--Roboto-font);
     font-weight: 400;
     color: var(--p_color);
     line-height: 28px;
@@ -656,11 +656,12 @@
 
 .blog-widget-title {
   font-size: 24px;
-  font-family: $Poppins-font;
+  font-family: var(--Poppins-font);
   font-weight: 600;
   color: var(--secondary_color);
   line-height: 30px;
 }
+
 blockquote {
   background: var(--bs-white);
   border-left: 8px solid var(--brand_color);
@@ -668,7 +669,7 @@ blockquote {
   position: relative;
   z-index: 0;
   margin-bottom: 40px;
-  box-shadow: $theme-dropshadow;
+  box-shadow: var(--theme-dropshadow);
   border-radius: 10px;
   &::before,
   &::after {
@@ -692,7 +693,7 @@ blockquote {
   }
   p {
     font-size: 20px;
-    font-family: $Roboto-font;
+    font-family: var(--Roboto-font);
     font-weight: 400;
     font-style: italic;
     color: var(--p_color);
@@ -707,19 +708,20 @@ blockquote {
     }
     h6 {
       font-size: 18px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 500;
       color: var(--secondary_color);
       margin-bottom: 5px;
     }
     span {
       font-size: 12px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       color: var(--p_color);
     }
   }
 }
+
 .blog-comment-widget {
   .comment-author {
     ul {
@@ -738,7 +740,7 @@ blockquote {
         border-bottom: 1px solid var(--black_50);
         padding-bottom: 38px;
         p {
-          font-family: $Roboto-font;
+          font-family: var(--Roboto-font);
           font-weight: 400;
           font-size: 16px;
           color: var(--p_color);
@@ -749,7 +751,7 @@ blockquote {
           position: relative;
           h5 {
             font-size: 16px;
-            font-family: $Roboto-font;
+            font-family: var(--Roboto-font);
             font-weight: 700;
             color: var(--secondary_color);
             margin-bottom: 8px;
@@ -759,7 +761,7 @@ blockquote {
             align-items: center;
             span {
               font-size: 14px;
-              font-family: $Roboto-font;
+              font-family: var(--Roboto-font);
               font-weight: 400;
               color: #535a60;
               margin-left: 8px;
@@ -773,7 +775,7 @@ blockquote {
             top: 0;
             font-size: 14px;
             color: var(--secondary_color);
-            font-family: $Roboto-font;
+            font-family: var(--Roboto-font);
             font-weight: 400;
             i {
               font-size: 16px;
@@ -790,6 +792,7 @@ blockquote {
     }
   }
 }
+
 .blog-leave-reply {
   .blog-widget-title {
     color: #1d2746;
@@ -798,7 +801,7 @@ blockquote {
   p,
   .check-label {
     font-size: 14px;
-    font-family: $Roboto-font;
+    font-family: var(--Roboto-font);
     font-weight: 400;
     color: #6a737c;
   }

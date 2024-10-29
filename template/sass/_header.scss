@@ -34,7 +34,7 @@ header {
       align-items: center;
       color: #bbc0c4;
       font-size: 14px;
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       .language-list {
         .nice-select {
@@ -53,7 +53,7 @@ header {
       }
     }
     .header-info-right {
-      font-family: $Roboto-font;
+      font-family: var(--Roboto-font);
       font-weight: 400;
       ul {
         display: flex;
@@ -103,20 +103,34 @@ header {
     top: 0;
     transition: all 0.2s, top 0.4s linear;
     .navbar {
-      .sticky_logo {
-        .main {
-          display: none;
-        }
-        .sticky {
+      .sticky_logo {               
+        /*
+        .logo-wrapper {
+          background-color: transparent;
+          display: inline-block;
+          padding: 5px;
+          overflow: hidden;
+        }          
+        .logo-img {
+          max-height: 50px;
+          height: auto;
           display: block;
-        }
-      }
+          margin: -1px;  
+          clip-path: inset(1px);  
+        } */           
+          .main {
+            display: none;            
+          }
+          .sticky {
+            display: block;            
+          }
+        }      
     }
     &.header-menu-1,
     &.header-menu-3,
     &.header-menu-4 {
       .theme-btn {
-        background-color: $theme-color;
+        background-color: var(--theme-color);
         color: #fff;
       }
       .navbar {
@@ -131,12 +145,12 @@ header {
               color: var(--brand_color);
             }
             > .nav-link {
-              color: $theme-title-color;
+              color: var(--theme-title-color);
               &.active {
-                color: $theme-color;
+                color: var(--theme-color);
               }
               &::before {
-                background-color: $theme-color;
+                background-color: var(--theme-color);
               }
             }
           }
@@ -145,13 +159,13 @@ header {
         .navbar-toggler {
           .hamburger {
             span {
-              background-color: $theme-title-color;
+              background-color: var(--theme-title-color);
             }
           }
 
           .hamburger-cross {
             span {
-              background-color: $theme-title-color;
+              background-color: var(--theme-title-color);
             }
           }
         }
@@ -192,14 +206,14 @@ header {
       .theme-btn {
         background-color: var(--brand_color);
         &:hover {
-          background-color: $theme-title-color;
+          background-color: var(--theme-title-color);
         }
       }
       .navbar {
         .menu {
           > .nav-item {
             > .nav-link {
-              color: $theme-title-color;
+              color: var(--theme-title-color);
               &.active {
                 color: var(--brand_color);
               }
@@ -219,9 +233,13 @@ header {
     .sticky_logo {
       .main {
         display: block;
+        max-height: 50px;
+        height: auto; 
       }
       .sticky {
         display: none;
+        max-height: 50px;
+        height: auto; 
       }
     }
   }
@@ -234,7 +252,7 @@ header {
       > .nav-link {
         font-size: 14px;
         color: #fff;
-        font-family: $Roboto-font;
+        font-family: var(--Roboto-font);
         font-weight: 500;
         position: relative;
         text-transform: uppercase;
@@ -320,7 +338,7 @@ header {
               padding: 0;
               white-space: nowrap;
               font-size: 14px;
-              font-family: $Roboto-font;
+              font-family: var(--Roboto-font);
               font-weight: 500;
               color: var(--p_color);
               transition: color 0.2s linear;
@@ -406,7 +424,7 @@ header {
                   top: -1px;
                   font-family: "ElegantIcons";
                   display: block;
-                  color: $theme-color;
+                  color: var(--theme-color);
                   transition: all 0.2s linear;
                   opacity: 0;
                 }
@@ -429,7 +447,7 @@ header {
                     right: 20px;
                   }
                   .nav-link {
-                    color: $theme-color;
+                    color: var(--theme-color);
                   }
                 }
               }
@@ -450,7 +468,7 @@ header {
                       font-weight: 400;
                       color: #fff;
                       position: relative;
-                      font-family: $Roboto-font;
+                      font-family: var(--Roboto-font);
                       font-weight: 500;
                       &:before {
                         content: "";
@@ -508,10 +526,10 @@ header {
   &.header-menu-1 {
     .theme-btn {
       background-color: #fff;
-      color: $theme-color;
+      color: var(--theme-color);
       &:hover {
         color: #fff;
-        background-color: $theme-title-color;
+        background-color: var(--theme-title-color);
       }
     }
   }
@@ -534,13 +552,13 @@ header {
     .navbar-toggler {
       .hamburger {
         span {
-          background-color: $theme-title-color;
+          background-color: var(--theme-title-color);
         }
       }
 
       .hamburger-cross {
         span {
-          background-color: $theme-title-color;
+          background-color: var(--theme-title-color);
         }
       }
     }
@@ -664,4 +682,26 @@ header {
 
 .mobile_dropdown_icon {
   display: none;
+}
+
+@media (max-width: 991px) {
+  .logo-img {
+      max-height: 40px;  /* Adjusted height for mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+      max-width: 130px;  /* Slightly increased width for smaller screens */
+  }
+}
+
+.navbar {
+  min-height: 60px; /* Ensure the navbar items align properly */
+  height: 90px;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin-right: auto; /* Push the brand to the left */
 }
