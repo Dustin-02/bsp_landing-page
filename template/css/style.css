@@ -10790,4 +10790,12 @@ body.body_dark .header-menu.header-menu-2 .menu > .nav-item > .nav-link {
   cursor: pointer;
 }
 
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+#easy-app .col-lg-6 {
+  margin-left: 20px;
+}
+
+/*----------------------------------------------------*/
+
 /*# sourceMappingURL=style.css.map */

@@ -54,7 +54,7 @@ const locales = {
     // Banner Section
     banner: {
       shortTitle: "Together, a better life",
-      mainTitle: "Hẹn Sino,<br/>Vẹn ước mơ",
+      mainTitle: "Hẹn Sino,<br/>Vẹn Ước Mơ",
     },
     projects: {
       title: "KHOẢN VAY",
