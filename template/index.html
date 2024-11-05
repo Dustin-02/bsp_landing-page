@@ -48,10 +48,7 @@
       href="css/responsive.css"
       media="all"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   </head>
 
   <body>
@@ -73,7 +70,7 @@
       <div class="header-menu header-menu-4" id="sticky">
         <nav class="navbar navbar-expand-lg">
           <div class="container">
-            <a class="navbar-brand" href="#home">
+            <a class="navbar-brand" href="index.html">
               <div class="logo-wrapper">
                 <img
                   src="img/logo/SNP-logo-1.png"
@@ -149,8 +146,9 @@
                     aria-expanded="false"
                     data-i18n="navbar.language"
                   >
-                    <i class="fas fa-globe"></i>
-                    Language <i class="fas fa-chevron-down"></i>
+                    <i class="fa-solid fa-globe"></i>
+                    LANGUAGE
+                    <i class="fa-solid fa-chevron-down"></i>
                   </a>
                   <ul
                     class="dropdown-menu dropdown-menu-end"
@@ -159,7 +157,7 @@
                     <li>
                       <button
                         class="dropdown-item"
-                        onclick="switchLanguage('vi')"
+                        onclick="switchLanguage('vi')"                        
                       >
                         Tiếng Việt
                       </button>
@@ -167,7 +165,7 @@
                     <li>
                       <button
                         class="dropdown-item"
-                        onclick="switchLanguage('en')"
+                        onclick="switchLanguage('en')"                        
                       >
                         English
                       </button>
@@ -378,15 +376,15 @@
       <!-- project section -->
       <section id="projects" class="client-area-2 pt-60 pb-60">
         <div class="container">
-          <h2 class="text-center mb-5 title">PROJECTS</h2>
+          <h2 class="text-center mb-5 title" data-i18n="projects.title">PROJECTS</h2>
           <div class="client-slider-2">
             <div class="single-client wow fadeInUp" data-wow-delay="0.1s">
               <a href="#detail_1">
                 <img src="img/projects/travel.png" id="project_1" />
                 <div class="introduction">
                   <!-- <p style="font-size: large; font-weight: 500"> -->
-                  <h5>TRAVEL LOAN</h5>
-                  <p class="card-text">
+                  <h5 data-i18n="projects.name1">TRAVEL LOAN</h5>
+                  <p class="card-text" data-i18n="projects.subname1">
                     Near and Dear
                     <br />
                     No Matter Where
@@ -398,8 +396,8 @@
               <a href="#detail_2">
                 <img src="img/projects/teacherloan.png" id="project_2" />
                 <div class="introduction">
-                  <h5>TEACHER LOAN</h5>
-                  <p>
+                  <h5 data-i18n="projects.name2">TEACHER LOAN</h5>
+                  <p data-i18n="projects.subname2">
                     Building Knowledge<br>
                     Shaping Tomorrow
                   </p>
@@ -410,8 +408,8 @@
               <a href="#detail_3">
                 <img src="img/projects/furniture.png" id="project_3" />
                 <div class="introduction">
-                  <h5>FURNITURE LOAN</h5>
-                  <p>
+                  <h5 data-i18n="projects.name3">FURNITURE LOAN</h5>
+                  <p data-i18n="projects.subname3">
                     Design Your Space<br>
                     Define Your Style
                   </p>
@@ -422,10 +420,10 @@
               <a href="#detail_4">
                 <img src="img/projects/experience.png" id="project_4" />
                 <div class="introduction">
-                  <h5>EXPERIENCE LOAN</h5>
-                  <p>
-                    External Drive<br>
-                    Internal Light
+                  <h5 data-i18n="projects.name4">EXPERIENCE LOAN</h5>
+                  <p data-i18n="projects.subname4">
+                    Look Outside<br>
+                    Shine Inside
                   </p>
                 </div>
               </a>
@@ -434,10 +432,10 @@
               <a href="#detail_5">
                 <img src="img/projects/study.png" id="project_5" />
                 <div class="introduction">
-                  <h5>STUDY LOAN</h5>
-                  <p>
-                    Study Finance:<br>
-                    Educate your success
+                  <h5 data-i18n="projects.name5">STUDY LOAN</h5>
+                  <p data-i18n="projects.subname5">
+                    Borrow Education<br>
+                    Harvest Future
                   </p>
                 </div>
               </a>
@@ -446,10 +444,10 @@
               <a href="#detail_6">
                 <img src="img/projects/youth.png" id="project_6" />
                 <div class="introduction">
-                  <h5>YOUTH LOAN</h5>
-                  <p>
+                  <h5 data-i18n="projects.name6">YOUTH LOAN</h5>
+                  <p data-i18n="projects.subname6">
                     Ignite Youth<br>
-                    Relize Dream
+                    Realize Dream
                   </p>
                 </div>
               </a>
@@ -466,27 +464,27 @@
               <div class="col-5">
                 <img src="img/projects/travel.png" alt="" srcset="" />
                 <div class="introduction">
-                  <p>
+                  <p data-i18n="details.banner1">
                     Your journey is not just yours – A travel for the whole family.
                   </p>
                 </div>
               </div>
               <div class="col-6 pl-lg-20">
                 <div class="feature">
-                  <h3>TRAVEL LOAN</h3>
-                  <h4>Easy App – Simple clicks, family travel awaits!</h4>
-                  <p>
+                  <h3 data-i18n="details.title1">TRAVEL LOAN</h3>
+                  <h4 data-i18n="details.featureHead1">Easy App – Simple clicks, family travel awaits!</h4>
+                  <p data-i18n="details.featureContent1">
                     Enjoy a consumer loan experience with Sinopac. Benefit from special offers with our airline and hotel partners, competitive interest rates, and the convenience of app-based disbursement.
                   </p>
                 </div>
                 <div class="project-cta">
                   <div class="inner">
-                    <p>
+                    <p data-i18n="details.testimonial1">
                       "With Sinopac, my family enjoy every travel precious
                       moment together without worries."
                     </p>
-                    <h4>Create family memories with Sinopac!</h4>
-                    <a href="#easy-app" class="theme-btn theme-btn-lg mb-10">
+                    <h4 data-i18n="details.ctaHead1">Create family memories with Sinopac!</h4>
+                    <a href="#easy-app" class="theme-btn theme-btn-lg mb-10" data-i18n="details.cta">
                       Get it now!                      
                     </a>
                   </div>
@@ -500,29 +498,29 @@
                 <div class="col-5">
                     <img src="img/projects/teacherloan.png" alt="" srcset="" />
                     <div class="introduction">
-                        <p>
-                            Secure your dreams with our special loan package for teacher.
+                        <p data-i18n="details.banner2">
+                          Secure your dreams with our special loan package for teacher.
                         </p>
                     </div>
                 </div>
                 <div class="col-6 pl-lg-20">
                     <div class="feature">
-                      <h3>TEACHER LOAN</h3>
-                        <h4>Invest in the Future, Elevate Knowledge with Sinopac.</h4>
-                        <ul>
-                            <li>Special loans for teachers, easy access to courses and workshops.</li>
-                            <li>Simple process, fast disbursement via Easy app.</li>
-                            <li>Contact us now for consultation!</li>
-                        </ul>
+                      <h3 data-i18n="details.title2">TEACHER LOAN</h3>
+                      <h4 data-i18n="details.featureHead2">Invest in the Future, Elevate Knowledge with Sinopac.</h4>
+                      <p data-i18n="details.featureContent2">
+                        Special loans for teachers, easy access to courses and workshops.
+                        Simple process, fast disbursement via Easy app.
+                        Contact us now for consultation!
+                      </p>
                     </div>
                     <div class="project-cta">
                         <div class="inner">
-                            <p>
-                                The premium loan helps teachers contribute to the national mission of providing better learning opportunities for students across Vietnam.
+                            <p data-i18n="details.testimonial2">
+                              "The premium loan helps teachers contribute to the national mission of providing better learning opportunities for students across Vietnam."
                             </p>
-                            <h4>Supporting teachers,<br>empowering dreams of knowledge!</h4>
-                            <a href="#easy-app" class="theme-btn theme-btn-lg mb-10">
-                                Get it now!
+                            <h4 data-i18n="details.ctaHead2">Supporting teachers, empowering dreams of knowledge!</h4>
+                            <a href="#easy-app" class="theme-btn theme-btn-lg mb-10" data-i18n="details.cta">
+                              Get it now!
                             </a>
                         </div>
                     </div>
@@ -535,27 +533,27 @@
                 <div class="col-5">
                     <img src="img/projects/furniture.png" alt="" srcset="" />
                     <div class="introduction">
-                        <p>
-                            Live in a luxurious space with a preferential interior design loan package
+                        <p data-i18n="details.banner3">
+                          Live in luxury with our special interior design loan package
                         </p>
                     </div>
                 </div>
                 <div class="col-6 pl-lg-20">
                     <div class="feature">
-                      <h3>FURNITURE LOAN</h3>
-                        <h4>Every antique holds a unique story. Let SinoPac help you write the next chapter of yours.</h4>
-                        <p>
-                            Experience the luxury of a new home with SinoPac's furniture financing. Enjoy competitive rates and a simple application process.
-                        </p>
+                      <h3 data-i18n="details.title3">INTERIOR LOAN</h3>
+                      <h4 data-i18n="details.featureHead3">Each piece of furniture tells its own story. Let SinoPac help you continue writing your story.</h4>
+                      <p data-i18n="details.featureContent3">
+                        Continue your home's story with SinoPac's furniture loan package. Competitive interest rates, simple procedures, helping you own a classy living space.
+                      </p>
                     </div>
                     <div class="project-cta">
                         <div class="inner">
-                            <p>
-                                Our dream of creating the perfect living space became a reality with Sinopac's home loan. The handcrafted furniture we invested in isn't just décor—it's an expression of who we are.
+                            <p data-i18n="details.testimonial3">
+                              "The dream of an ideal living space has become reality thanks to Sinopac with quick unsecured loans for furniture, handcrafted furniture items are not just decorations, but also vivid paintings of our souls."
                             </p>
-                            <h4>Start building your unique interior design styles with Easy App.</h4>
-                            <a href="#easy-app" class="theme-btn theme-btn-lg mb-10">
-                                Get it now!
+                            <h4 data-i18n="details.ctaHead3">Start building distinctive interior design styles with Easy App</h4>
+                            <a href="#easy-app" class="theme-btn theme-btn-lg mb-10" data-i18n="details.cta">
+                              Get it now!
                             </a>
                         </div>
                     </div>
@@ -568,27 +566,27 @@
                 <div class="col-5">
                     <img src="img/projects/experience.png" alt="" srcset="" />
                     <div class="introduction">
-                        <p>
-                            Explore a world of financial opportunities. Start your journey with SinoPac.
+                        <p data-i18n="details.banner4">
+                          Explore the vast world waiting for you – Start with SinoPac
                         </p>
                     </div>
                 </div>
                 <div class="col-6 pl-lg-20">
                     <div class="feature">
-                      <h3>EXPERIENCE LOAN</h3>
-                        <h4>Easy loans for unforgettable adventures.</h4>
-                        <p>
-                            SinoPac empowers you to explore the world with our exclusive loan package. Enjoy low interest rates and a streamlined application process to turn your dream vacation into a reality.
-                        </p>
+                      <h3 data-i18n="details.title4">EXPERIENCE LOAN</h3>
+                      <h4 data-i18n="details.featureHead4">Easy travel loans, discover all wonders</h4>
+                      <p data-i18n="details.featureContent4">
+                        SinoPac helps you explore with special loan offers. Low interest rates, simple procedures, making your dream journey a reality.
+                      </p>
                     </div>
                     <div class="project-cta">
                         <div class="inner">
-                            <p>
-                                Our dream of exploring the world finally came true, thanks to Sinopac. With their travel loan, we could plan everything without stressing over upfront costs.
+                            <p data-i18n="details.testimonial4">
+                              "Sinopac opened doors to new horizons. With the travel credit loan, we've fulfilled our wanderlust dreams, freely exploring the world."
                             </p>
-                            <h4>Financial freedom,<br>Adventure without limits</h4>
-                            <a href="#easy-app" class="theme-btn theme-btn-lg mb-10">
-                                Get it now!
+                            <h4 data-i18n="details.ctaHead4">Financial flexibility, unlimited world exploration</h4>
+                            <a href="#easy-app" class="theme-btn theme-btn-lg mb-10" data-i18n="details.cta">
+                              Get it now!
                             </a>
                         </div>
                     </div>
@@ -601,27 +599,27 @@
                 <div class="col-5">
                     <img src="img/projects/study.png" alt="" srcset="" />
                     <div class="introduction">
-                        <p>
-                            Your Journey, Our Partnership: Abroad Study Loans Today!
+                        <p data-i18n="details.banner5">
+                          Your journey, we accompany: Apply for study abroad loan today!
                         </p>
                     </div>
                 </div>
                 <div class="col-6 pl-lg-20">
                     <div class="feature">
-                      <h3>STUDY LOAN</h3>
-                        <h4>Enhancing Skills, Empowering Yourself, Securing Your Future</h4>
-                        <p>
-                            SinoPac provides you with convenient loan options and expedited procedures to support your pursuit of higher education.
-                        </p>
+                      <h3 data-i18n="details.title5">STUDY LOAN</h3>
+                      <h4 data-i18n="details.featureHead5">Elevate Skills - Develop Self - Support Future</h4>
+                      <p data-i18n="details.featureContent5">
+                        SinoPac accompanies your study abroad with preferential loan packages, quick procedures, helping you achieve your educational dreams easily.
+                      </p>
                     </div>
                     <div class="project-cta">
                         <div class="inner">
-                            <p>
-                                I filled out the application in minutes and started my studies!
+                            <p data-i18n="details.testimonial5">
+                              "With just a few minutes of bank credit registration, I could start my learning journey"
                             </p>
-                            <h4>Download the App – Apply for an Education Loan</h4>
-                            <a href="#easy-app" class="theme-btn theme-btn-lg mb-10">
-                                Get it now!
+                            <h4 data-i18n="details.ctaHead5">Download App - Get Education Loan</h4>
+                            <a href="#easy-app" class="theme-btn theme-btn-lg mb-10" data-i18n="details.cta">
+                              Get it now!
                             </a>
                         </div>
                     </div>
@@ -634,27 +632,27 @@
                 <div class="col-5">
                     <img src="img/projects/youth.png" alt="" srcset="" />
                     <div class="introduction">
-                        <p>
-                            Ignite your passion, conquer your dreams - Live life to the fullest with SinoPac!
+                        <p data-i18n="details.banner6">
+                          Ignite passion, conquer dreams - Youth to live fully with SinoPac!
                         </p>
                     </div>
                 </div>
                 <div class="col-6 pl-lg-20">
                     <div class="feature">
-                      <h3>YOUTH LOAN</h3>
-                        <h4>Shine Bright with Your True Self, Together with SinoPac!</h4>
-                        <p>
-                            SinoPac: Enabling the dreams of the young. Our attractive loan programs and simplified procedures make it easy for you to explore your potential.
-                        </p>
+                      <h3 data-i18n="details.title6">YOUTH LOAN</h3>
+                      <h4 data-i18n="details.featureHead6">Shine with your own identity with SinoPac!</h4>
+                      <p data-i18n="details.featureContent6">
+                        Sinopac: Your companion in youth dreams. With preferential loan packages and simple procedures, Sinopac helps you confidently implement all passion exploration plans.
+                      </p>
                     </div>
                     <div class="project-cta">
                         <div class="inner">
-                            <p>
-                                Sinopac loan – Stay trendy, no cost worries. Manage finances easily, enjoy life.
+                            <p data-i18n="details.testimonial6">
+                              "Loan Sinopac - Stylish, no cost worries. Easy financial management, enjoy life."
                             </p>
-                            <h4>Follow your youth, leave your worries behind</h4>
-                            <a href="#easy-app" class="theme-btn theme-btn-lg mb-10">
-                                Get it now!
+                            <h4 data-i18n="details.ctaHead6">Fulfill youth passion, worry-free</h4>
+                            <a href="#easy-app" class="theme-btn theme-btn-lg mb-10" data-i18n="details.cta">
+                              Get it now!
                             </a>
                         </div>
                     </div>
@@ -1483,7 +1481,7 @@
           <div class="row gy-4">
             <div class="col">
               <div class="footer-widget fadeInLeft">
-                <a href="index.html" class="d-inline-block">
+                <a href="#" class="d-inline-block">
                   <img
                     src="img/logo/SNP-logo-1.png"
                     alt="logo"
@@ -1516,13 +1514,11 @@
                   <!-- <ul class="list-unstyled">
                         <li class=""> -->
                   <a href="#" class="text-decoration-none"
-                    ><p>Telephone: +84 345 678 910</p></a
-                  >
+                    ><p>Telephone: +84 345 678 910</p></a>
                   <!-- </li> -->
                   <!-- <li> -->
                   <a href="#" class="text-decoration-none"
-                    ><p>Address: Friendship, District 1, HCM city</p></a
-                  >
+                    ><p>Address: Friendship, District 1, HCM city</p></a>
                   <!-- </li>
                       </ul> -->
                 </div>

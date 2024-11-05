@@ -91,7 +91,7 @@ header {
       &:hover {
         background-color: var(--brand_color);
       }
-    }
+    }    
   }
   &.navbar_fixed {
     background: var(--bs-white);
@@ -232,38 +232,119 @@ header {
       padding-top: 25px;
       transition: all 0.3s linear;
       > .nav-link {
-        font-size: 1rem;
-        color: black;
-        font-family: $Roboto-font;
-        font-weight: 500;
-        position: relative;
-        text-transform: uppercase;
-        .fa-globe {
-          color: var(--theme-color) !important;
-          font-size: 1.5rem !important;
-          width: auto !important;
-          vertical-align: -2.85px;
-          margin-right: 5px;
-        }
+          font-size: 1rem;
+          color: black;
+          font-family: $Roboto-font;
+          font-weight: 500;
+          position: relative;
+          text-transform: uppercase;
 
-        &.active {
-          &::before {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 5px;
-            width: 5px;
-            border-radius: 50%;
-            background-color: #fff;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          i, .fa-solid, .fas {
+            display: inline-block !important;
+            font-family: "Font Awesome 6 Free" !important;
+            font-weight: 900 !important;
+            font-style: normal !important;
           }
-        }
+            
+          .fa-globe {
+            font-size: 16px;
+            color: var(--theme-color);
+          }
 
-        &::after {
-          display: none;
+          .fa-chevron-down {
+            font-size: 12px;
+            color: currentColor;
+          }
+          
+          &.dropdown-toggle {
+            i, 
+            .fa-solid, 
+            .fas {
+              display: inline-block !important;
+              font-family: "Font Awesome 6 Free" !important;
+              font-weight: 900 !important;
+              font-style: normal !important;
+            }
+          }
+          // Hover effect - underline animation
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--brand_color);
+            transition: width 0.3s ease;            
+          }
+
+          &:hover {
+            color: var(--brand_color);
+
+            &::after {
+              width: 100%;
+            }
+          }
+
+          // Active state
+          &.active {
+            color: var(--brand_color);
+
+            &::after {
+              width: 100%;
+            }
+          }
+      }
+
+      &.active {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 5px;
+          width: 5px;
+          border-radius: 50%;
+          background-color: #fff;
         }
       }
+
+      &::after {
+        display: none;
+      }
+
+      &.dropdown {
+        .nav-link {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          
+          i, 
+          .fa-solid, 
+          .fas {
+            display: inline-block !important;
+            font-family: "Font Awesome 6 Free" !important;
+            font-weight: 900 !important;
+            font-style: normal !important;
+          }
+
+          .fa-globe {
+            font-size: 16px;
+            color: var(--theme-color);
+          }
+
+          .fa-chevron-down {
+            font-size: 12px;
+            color: currentColor;
+          }
+        }
+      }
+
       &.submenu {
         .dropdown-menu {
           margin: 0;
@@ -349,7 +430,6 @@ header {
                 @media (min-width: 992px) {
                   opacity: 1;
                   visibility: visible;
-
                   transform: translateX(1px) translateY(0px);
                 }
               }
@@ -511,6 +591,16 @@ header {
           margin-left: 200px;
         }
       }
+      .fas {
+        display: inline-block !important;
+      }
+      
+      button {
+        .dropdown-item {
+          font-family: $Roboto-font;
+          font-size: 1rem;
+        }
+      }
     }
   }
 
@@ -560,7 +650,7 @@ header {
   }
 
   &.header-menu-3 {
-    background-color: rgba(#171d24, 50%);
+    background-color: rgba(#171d24, 0.5);
 
     .theme-btn-outlined {
       color: #fff;
@@ -678,3 +768,94 @@ header {
 .mobile_dropdown_icon {
   display: none;
 }
+
+// Add global Font Awesome styles
+i.fa-solid,
+i.fas {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  display: inline-block !important;
+  font-style: normal !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+// Debug styles - add these temporarily to see if icons are being targeted
+
+.nav-link.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .fa-globe {
+    color: var(--theme-color);
+  }
+
+  .fa-chevron-down {
+    font-size: 12px;
+  }
+}
+
+.header-menu {
+  .menu {
+    > .nav-item {
+      &.dropdown {
+        .nav-link.dropdown-toggle {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding-right: 8px;
+          color: var(--secondary_color);
+          transition: color 0.3s ease;
+
+          // Remove default Bootstrap dropdown arrow
+          &::after {
+            display: none;
+          }
+
+          // Custom underline effect
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: 0px; // Adjust this value to position the line
+            left: 0px;
+            width: calc(100% - 0px); // Subtract some space for the dropdown icon
+            height: 2px;
+            background-color: var(--brand_color);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+          }
+
+          &:hover {
+            color: var(--brand_color);
+
+            &::before {
+              transform: scaleX(1);
+            }
+          }
+        }
+
+        .dropdown-menu {
+          margin-top: 5px;
+          border: 1px solid var(--theme-border-color);
+          box-shadow: var(--theme-dropshadow);
+          
+          .dropdown-item {
+            padding: 8px 20px;
+            transition: color 0.3s ease;
+            font-family: $Roboto-font;
+            font-size: 1rem;
+            
+            &:hover {
+              background-color: rgba(0, 80, 178, 0.1);
+              color: var(--brand_color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

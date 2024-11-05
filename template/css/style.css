@@ -174,8 +174,9 @@ ul {
 
 li {
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--theme-color);
+  font-family: "Be Vietnam Pro", "Roboto", sans-serif;
 }
 
 p {
@@ -581,7 +582,7 @@ input::-webkit-inner-spin-button {
 /*----------------------------------------------------*/
 .theme-btn {
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.5rem;
   color: #fff;
   height: 50px;
   line-height: 50px;
@@ -1268,15 +1269,55 @@ header .header-top .header-info-right ul li i {
   font-weight: 500;
   position: relative;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header-menu .menu > .nav-item > .nav-link i, .header-menu .menu > .nav-item > .nav-link .fa-solid, .header-menu .menu > .nav-item > .nav-link .fas {
+  display: inline-block !important;
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
 }
 .header-menu .menu > .nav-item > .nav-link .fa-globe {
-  color: var(--theme-color) !important;
-  font-size: 1.5rem !important;
-  width: auto !important;
-  vertical-align: -2.85px;
-  margin-right: 5px;
+  font-size: 16px;
+  color: var(--theme-color);
 }
-.header-menu .menu > .nav-item > .nav-link.active::before {
+.header-menu .menu > .nav-item > .nav-link .fa-chevron-down {
+  font-size: 12px;
+  color: currentColor;
+}
+.header-menu .menu > .nav-item > .nav-link.dropdown-toggle i,
+.header-menu .menu > .nav-item > .nav-link.dropdown-toggle .fa-solid,
+.header-menu .menu > .nav-item > .nav-link.dropdown-toggle .fas {
+  display: inline-block !important;
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+}
+.header-menu .menu > .nav-item > .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--brand_color);
+  transition: width 0.3s ease;
+}
+.header-menu .menu > .nav-item > .nav-link:hover {
+  color: var(--brand_color);
+}
+.header-menu .menu > .nav-item > .nav-link:hover::after {
+  width: 100%;
+}
+.header-menu .menu > .nav-item > .nav-link.active {
+  color: var(--brand_color);
+}
+.header-menu .menu > .nav-item > .nav-link.active::after {
+  width: 100%;
+}
+.header-menu .menu > .nav-item.active::before {
   content: "";
   position: absolute;
   top: 100%;
@@ -1287,8 +1328,29 @@ header .header-top .header-info-right ul li i {
   border-radius: 50%;
   background-color: #fff;
 }
-.header-menu .menu > .nav-item > .nav-link::after {
+.header-menu .menu > .nav-item::after {
   display: none;
+}
+.header-menu .menu > .nav-item.dropdown .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header-menu .menu > .nav-item.dropdown .nav-link i,
+.header-menu .menu > .nav-item.dropdown .nav-link .fa-solid,
+.header-menu .menu > .nav-item.dropdown .nav-link .fas {
+  display: inline-block !important;
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+}
+.header-menu .menu > .nav-item.dropdown .nav-link .fa-globe {
+  font-size: 16px;
+  color: var(--theme-color);
+}
+.header-menu .menu > .nav-item.dropdown .nav-link .fa-chevron-down {
+  font-size: 12px;
+  color: currentColor;
 }
 .header-menu .menu > .nav-item.submenu .dropdown-menu {
   margin: 0;
@@ -1510,6 +1572,13 @@ header .header-top .header-info-right ul li i {
     margin-left: 200px;
   }
 }
+.header-menu .menu > .nav-item .fas {
+  display: inline-block !important;
+}
+.header-menu .menu > .nav-item button .dropdown-item {
+  font-family: "Be Vietnam Pro", "Roboto", sans-serif;
+  font-size: 1rem;
+}
 .header-menu .theme-btn {
   margin-left: 55px;
 }
@@ -1645,6 +1714,74 @@ header .header-top .header-info-right ul li i {
 
 .mobile_dropdown_icon {
   display: none;
+}
+
+i.fa-solid,
+i.fas {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  display: inline-block !important;
+  font-style: normal !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.nav-link.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-link.dropdown-toggle .fa-globe {
+  color: var(--theme-color);
+}
+.nav-link.dropdown-toggle .fa-chevron-down {
+  font-size: 12px;
+}
+
+.header-menu .menu > .nav-item.dropdown .nav-link.dropdown-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-right: 8px;
+  color: var(--secondary_color);
+  transition: color 0.3s ease;
+}
+.header-menu .menu > .nav-item.dropdown .nav-link.dropdown-toggle::after {
+  display: none;
+}
+.header-menu .menu > .nav-item.dropdown .nav-link.dropdown-toggle::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: calc(100% - 0px);
+  height: 2px;
+  background-color: var(--brand_color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.header-menu .menu > .nav-item.dropdown .nav-link.dropdown-toggle:hover {
+  color: var(--brand_color);
+}
+.header-menu .menu > .nav-item.dropdown .nav-link.dropdown-toggle:hover::before {
+  transform: scaleX(1);
+}
+.header-menu .menu > .nav-item.dropdown .dropdown-menu {
+  margin-top: 5px;
+  border: 1px solid var(--theme-border-color);
+  box-shadow: var(--theme-dropshadow);
+}
+.header-menu .menu > .nav-item.dropdown .dropdown-menu .dropdown-item {
+  padding: 8px 20px;
+  transition: color 0.3s ease;
+  font-family: "Be Vietnam Pro", "Roboto", sans-serif;
+  font-size: 1rem;
+}
+.header-menu .menu > .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(0, 80, 178, 0.1);
+  color: var(--brand_color);
 }
 
 /*----------------------------------------------------*/
@@ -6399,9 +6536,9 @@ header .header-top .header-info-right ul li i {
   bottom: 0;
   width: 100%;
   background-color: #2b2d2f;
-  opacity: 0.7;
+  opacity: 0.65;
   color: #fff;
-  height: 30%;
+  height: 26%;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   pointer-events: none;
@@ -6411,10 +6548,10 @@ header .header-top .header-info-right ul li i {
   margin-top: 1rem;
   margin-bottom: 0.2rem;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 .client-slider-2 .single-client .introduction p {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 .client-slider-2 .single-client .quote {
   font-size: 18px;
@@ -6480,9 +6617,11 @@ header .header-top .header-info-right ul li i {
   right: 15px;
   background-color: #fff;
   opacity: 0.6;
+  pointer-events: auto;
+  z-index: 1;
+  transition: all 0.3s ease;
   color: var(--theme-color);
   height: auto;
-  pointer-events: none;
   box-sizing: border-box;
   padding: 12px 20px;
   border-top-left-radius: 30px;
@@ -6490,7 +6629,12 @@ header .header-top .header-info-right ul li i {
   margin-bottom: 0.2rem;
   font-style: italic;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+.project_detail .row .col-5 .introduction:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .project_detail .row .col-6 {
   position: relative;
@@ -6511,39 +6655,42 @@ header .header-top .header-info-right ul li i {
   color: var(--theme-color);
 }
 .project_detail .row .col-6 .feature h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   margin: 2rem 0;
 }
 .project_detail .row .col-6 .feature h4 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-top: 3rem;
   font-style: italic;
 }
 .project_detail .row .col-6 .feature p {
   color: var(--theme-color);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 .project_detail .row .col-6 .project-cta {
+  position: absolute;
   text-align: center;
+  bottom: 0;
+  left: 30px;
+  right: 15px;
   padding: 0 10px;
   margin: 2rem auto 0rem;
 }
 .project_detail .row .col-6 .project-cta .inner {
   position: relative;
   width: 100%;
-  font-size: 1.2rem;
 }
 .project_detail .row .col-6 .project-cta .inner p {
   font-style: italic;
   color: var(--theme-color);
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 .project_detail .row .col-6 .project-cta .inner h4 {
   font-weight: 600;
   font-style: italic;
-  font-size: 1.83rem;
+  font-size: 1.3rem;
   margin-top: 1rem;
 }
 .project_detail .row .col-6 .project-cta .inner a {
@@ -6551,7 +6698,7 @@ header .header-top .header-info-right ul li i {
   border-radius: 20px;
   margin-top: 2rem;
   margin-bottom: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .project_detail .theme-btn::before {
@@ -7137,7 +7284,7 @@ header .header-top .header-info-right ul li i {
   color: var(--secondary_color);
   font-family: "Be Vietnam Pro", "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.3rem;
   line-height: 40px;
   position: relative;
   cursor: pointer;
@@ -7549,7 +7696,7 @@ header .header-top .header-info-right ul li i {
   max-width: 100%;
 }
 .how-it-work .single-widget .widget-header .widget-title h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #fff;
   font-family: "Be Vietnam Pro", "Poppins", sans-serif;
   font-weight: 600;
