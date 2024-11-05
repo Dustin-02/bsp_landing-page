@@ -121,6 +121,25 @@ const locales = {
       "featureContent6": "Sinopac: Người bạn đồng hành với ước mơ của tuổi trẻ. Với các gói vay ưu đãi và thủ tục đơn giản, Sinopac giúp bạn tự tin thực hiện mọi kế hoạch khám phá đam mê.",
       "testimonial6": "\"Vay Sinopac – Sành điệu, không lo chi phí. Quản lý tài chính dễ dàng, tận hưởng cuộc sống.\"",
       "ctaHead6": "Thỏa đam mê tuổi trẻ, chẳng cần lo nghĩ"
+    },
+
+    // Add Easy App section
+    easyApp: {
+      GlobalFinancialManagement: "Quản lý tài chính toàn cầu",
+      OnlinePersonalLoan: "Vay vốn tín dụng online",
+      QuickAndSecureLogin: "Đăng nhập nhanh chóng an toàn",
+      HighestLevelOfSecurity: "Bảo mật tối đa",
+      DownloadApp: "Tải Easy App ngay để trải nghiệm!"
+    },
+
+    // Add Product section
+    product: {
+      DigitalMicroloans: "VAY TRỰC TUYẾN",
+      Experience: "Vay trực tuyến thông minh, mọi lúc mọi nơi.",
+      WhyChooseUs: "VỀ CHÚNG TÔI",
+      script: "Sinopac Bank mang đến giải pháp vay vốn linh hoạt, cùng thủ tục đơn giản.<br/>Chỉ cần vài cú click, bạn có thể quản lý tài chính một cách tối ưu.",
+      ApplyNow: "ĐĂNG KÝ NGAY",
+      Details: "CHI TIẾT"
     }
   }
 };
