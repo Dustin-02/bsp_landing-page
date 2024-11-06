@@ -45,7 +45,7 @@ const locales = {
   vi: {
     // navbar
     navbar: {
-      easyApp: "EASY APP",
+      easyApp: " APP",
       products: "SẢN PHẨM",
       projects: "KHOẢN VAY",
       faqs: "CÂU HỎI",
